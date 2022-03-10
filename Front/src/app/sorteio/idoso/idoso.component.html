@@ -1,0 +1,23 @@
+<div class="form-inline">
+  <button type="button" class="btn btn-outline-light btn-sm"
+  (click)="get_sortear()">
+      Realizar Sorteio
+  </button>
+  <!-- <h3>Filtro: {{filtroLista}}</h3> -->
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>CPF</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sorteios of sorteio">
+        <td>{{sorteios.cpf}}</td>
+        <td>{{sorteios.nome}}</td>
+       </tr>
+    </tbody>
+
+  </table>
+
+</div>
